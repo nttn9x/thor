@@ -8,6 +8,9 @@
     },
     {
       "path": "./apps/portfolio"
+    },
+    {
+      "path": "./libs/i18n"
     }
   ]
 }

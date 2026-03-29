@@ -1,0 +1,16 @@
+:root {
+    --text-body: #b7ab98
+}
+
+.mask {
+    --size: 30px;
+    --x: -100px;
+    --y: -100px;
+
+    mask-size: var(--size), contain;
+    mask-image: url(../../../public/assets/svg/circle.svg);
+    mask-repeat: no-repeat;
+    mask-position: calc(var(--x) - var(--size)/2) calc(var(--y) - var(--size)/2), center;
+    mask-origin: content-box;
+    @apply bg-orange-500;
+}

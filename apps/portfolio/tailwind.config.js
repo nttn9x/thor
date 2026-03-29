@@ -10,6 +10,8 @@
 // A discussion of the issue can be found: https://github.com/nrwl/nx/issues/26510
 
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   content: [
     './{src,pages,components,app}/**/*.{ts,tsx,js,jsx,html}',
@@ -17,7 +19,11 @@ module.exports = {
     //     ...createGlobPatternsForDependencies(__dirname)
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: colors.orange,
+      },
+    },
   },
   plugins: [],
 };

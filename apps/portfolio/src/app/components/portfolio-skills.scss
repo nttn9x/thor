@@ -1,0 +1,15 @@
+.heading-content {
+    --xPercent: 0%;
+    clip-path: inset(0 var(--xPercent) 0 0);
+}
+
+
+.heading.hover .heading-mask {
+    clip-path: inset(0);
+}
+
+.heading-mask {
+    pointer-events: none;
+    clip-path: inset(80% 0 80% 0);
+    transition: clip-path 1s cubic-bezier(.165, .84, .44, 1);
+}
