@@ -7,11 +7,11 @@ interface IBannerInfo {
 
 const i18n = {
   content: {
-    hello: "Thuong Nguyen",
+    hello: "Nguyen Nguyen",
     content: ['BUILD', 'WHATEVER', 'YOU', 'WANT'],
   },
   mask: {
-    hello: "Thuong Nguyen",
+    hello: "Nguyen Nguyen 🫰",
     content: ['BUILD', 'SHIT', 'FOR', 'YOU'],
   },
 };

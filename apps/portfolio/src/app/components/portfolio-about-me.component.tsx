@@ -26,24 +26,20 @@ export default function AboutPartOne({ mask }: IAboutPartOne) {
             {!mask && (
               <>
                 <div className="opacity-20 z-10 text-6xl font-bold about-me-mask absolute top-0 left-0 ">
-                  <>
-                    {"I'm a "}
-                    <span className="text-primary-500">
-                      specifically skilled
-                    </span>{' '}
-                    guy with strong focus on producing high-quality & impactful
-                    smooth user experience
-                  </>
+                  I am a{' '}
+                  <span className="text-primary-500">
+                    highly skilled
+                  </span>{' '}
+                  frontend specialist focused on delivering high-quality, seamless
+                  user experiences.
                 </div>
                 <div className="text-6xl font-bold content about-me relative z-20">
-                  <>
-                    {"I'm a "}
-                    <span className="text-primary-500">
-                      specifically skilled
-                    </span>{' '}
-                    guy with strong focus on producing high-quality & impactful
-                    smooth user experience
-                  </>
+                  I am a{' '}
+                  <span className="text-primary-500">
+                    highly skilled
+                  </span>{' '}
+                  frontend specialist focused on delivering high-quality, seamless
+                  user experiences.
                 </div>
               </>
             )}
