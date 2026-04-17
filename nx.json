@@ -19,9 +19,7 @@
     {
       "plugin": "@nx/js/typescript",
       "options": {
-        "typecheck": {
-          "targetName": "typecheck"
-        },
+        "typecheck": { "targetName": "typecheck" },
         "build": {
           "targetName": "build",
           "configName": "tsconfig.lib.json",
@@ -41,24 +39,9 @@
         "watchDepsTargetName": "watch-deps"
       }
     },
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    },
-    {
-      "plugin": "@nx/playwright/plugin",
-      "options": {
-        "targetName": "e2e"
-      }
-    },
-    {
-      "plugin": "@nx/jest/plugin",
-      "options": {
-        "targetName": "test"
-      }
-    },
+    { "plugin": "@nx/eslint/plugin", "options": { "targetName": "lint" } },
+    { "plugin": "@nx/playwright/plugin", "options": { "targetName": "e2e" } },
+    { "plugin": "@nx/jest/plugin", "options": { "targetName": "test" } },
     {
       "plugin": "@nx/vite/plugin",
       "options": {
@@ -91,24 +74,12 @@
     }
   ],
   "targetDefaults": {
-    "dev*": {
-      "dependsOn": ["^build"]
-    },
-    "test": {
-      "dependsOn": ["^build"]
-    }
+    "dev*": { "dependsOn": ["^build"] },
+    "test": { "dependsOn": ["^build"] }
   },
   "generators": {
-    "@nx/next": {
-      "application": {
-        "style": "tailwind",
-        "linter": "eslint"
-      }
-    },
-    "@nx/react": {
-      "library": {
-        "unitTestRunner": "none"
-      }
-    }
-  }
+    "@nx/next": { "application": { "style": "tailwind", "linter": "eslint" } },
+    "@nx/react": { "library": { "unitTestRunner": "none" } }
+  },
+  "nxCloudId": "69c8e23938f36abede80ab69"
 }
